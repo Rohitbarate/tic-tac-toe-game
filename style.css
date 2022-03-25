@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background: rgb(204, 243, 168);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+h1{
+    text-align: center;
+    font-size: 6vw;
+    letter-spacing: 7px;
+    font-weight: bolder;
+    font-family: monospace;
+}
+.row{
+    background-color: rgb(188, 247, 121);
+    position: relative;
+    width: 360px;
+    margin: 5vh auto;
+    align-items: center;
+    box-shadow: 0px ;
+}
+.game{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    text-align: center;
+    margin: 20px 0;
+    align-content: center;
+}
+.container .row .playAgain{
+    border: 2px solid red;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #221f1fb5;
+    display: none;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    flex-direction: column;
+
+}
+.container .row .playAgain button{
+    padding: 10px;
+    font-weight: bolder;
+    font-family: cursive;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.container .row .playAgain button:hover{
+    color: crimson;
+}
+
+#result{
+    font-size: 2rem;
+    margin: 10px 0px;
+}
+.game .box{
+    border: 1px solid red;
+    text-align: center;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    display: flex;
+    font-size: 7rem;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+.game .box:hover{
+    background-color:rgb(143, 240, 33) ;
+}
+.game .left{
+    border-left: none;
+}
+.game .right{
+    border-right:none;
+}
+.game .top{
+    border-top: none;
+}
+.game .bottom{
+    border-bottom: none;
+}
+.info, 
+.result{
+    background-color: rgb(136, 255, 0);
+    border: 1px solid rgb(2, 61, 12);
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    font-size: 1.5rem;
+    font-family: cursive;
+    position: relative;
+    font-weight: 700;
+}
+.info span,.winnerName{
+    color: crimson;
+    font-weight:bolder;
+}

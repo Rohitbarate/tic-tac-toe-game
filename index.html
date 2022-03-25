@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tic tac toe | By Rohit Barate</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="row" id="row">
+            <div class="playAgain" id="playAgain">
+                <button onclick="playAgain()">Enjoy Again</button>
+                <p id="result"></p>
+            </div>
+            <div class="info">
+                <p> Player <span id="playerName" class="playerName">X</span>'s turn</p>
+            </div>
+            <div class="game" id="game">
+                <div class="box top left"></div>
+                <div class="box top"></div>
+                <div class="box top right"></div>
+                <div class="box left"></div>
+                <div class="box"></div>
+                <div class="box right"></div>
+                <div class="box bottom left"></div>
+                <div class="box bottom"></div>
+                <div class="box bottom right"></div>
+
+            </div>
+            <div id="resultArea" class="info result">
+                <p id="resultDiv"></p>
+            </div>
+        </div>
+    </div>
+    <!-- script file -->
+    <script src="main.js"></script>
+</body>
+
+</html>
